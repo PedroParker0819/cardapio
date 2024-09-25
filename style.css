@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dish {
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px; /* Largura fixa para as boxes */
+}
+
+.dish img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.dish h2 {
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+.dish p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.dish:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Para garantir que a box em destaque fique acima */
+}
+
+button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
